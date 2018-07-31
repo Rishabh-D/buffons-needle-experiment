@@ -1,7 +1,9 @@
 var D=[];
 var angle=[];
 var cc=[];
- 
+var previous_needle_array_len=0;
+var previous_needle_array_len2=0;
+var count=0;
 // function constructor for needles
 function Needle() {
     this.length = length_of_needles;
@@ -47,14 +49,14 @@ function nearerTo(cx,cy) {
     // line at 200p is B
     
     if((cy-100)<50){
-        console.log("near A");
+       // console.log("near A");
         return 'A';
         
         
     }
     else 
         {
-            console.log("near B");
+            //console.log("near B");
         return 'B';
             
         }
@@ -66,9 +68,10 @@ function nearerTo(cx,cy) {
 function is_intersecting (needle_array) {
     
     
-    var count=0;
-    for(var i=0;i<needle_array.length;i++){
-         var d = needle_array[i];
+    
+    for(var i=previous_needle_array_len2;i<needle_array.length;i++){
+        
+        var d = needle_array[i];
 
         if((d.y1>100 && d.y2<100)||(d.y2>100 && d.y1<100)){
             count++;
@@ -84,6 +87,7 @@ function is_intersecting (needle_array) {
         }
         
     }
+    previous_needle_array_len2=needle_array.length;
     return count;
     
     

@@ -51,11 +51,11 @@
  //       }
 
 function second_plot(){
-console.log(D.length);
+//console.log(D.length);
 
     if(D.length==0){
         ctx.clearRect(0, 0, c.width, c.height);
-        console.log(c.width);
+        //console.log(c.width);
 
         ctx.fillStyle = "white";
         ctx.fillRect(0, 0, c.width, c.height);
@@ -128,6 +128,6 @@ console.log(D.length);
 
 
         }
-        console.log(c.width);
+        //console.log(c.width);
 }
 }

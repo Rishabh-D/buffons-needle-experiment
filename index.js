@@ -38,6 +38,9 @@ function erase(){
     cc=[];
     D=[];
     angle=[];
+    previous_needle_array_len=0;
+    previous_needle_array_len2=0;
+    count=0;
     result();
     
 }
