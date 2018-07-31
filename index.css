@@ -1,13 +1,6 @@
 
-body{
-background-image:url("img1.jpg");
-    background-size: 100%;
-
-    
-}
-
-h1 {
-  font-size: 150%;
+#heading{
+  
   color:#4C3327;
   text-align:center;
   background-color:#FFE361;

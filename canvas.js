@@ -21,4 +21,5 @@ canvas.render_needles = function(){
         
     }
     previous_needle_array_len=needle_array.length;
+    
 }

@@ -105,9 +105,9 @@ function second_plot(){
  //   }
     else{
         for(var i=0;i<D.length;i++){
-        var length_of_needle=length_of_needles;
-        var angle_of_needle;
-            angle_of_needle=i;
+        var length_of_needle=length_of_needle;
+        var angle_of_needless;
+            angle_of_needless=i;
            var x=(100)*(degree_to_rads(angle[i]));
            var y=(4)*D[i];
             if(cc[i]==1 || cc[i]==2){ ctx.fillStyle = 'red'; } else { ctx.fillStyle = '#008F68'; }
@@ -116,12 +116,12 @@ function second_plot(){
            ctx.arc(x+20, 200-y, 1, 0, 2*Math.PI);
            ctx.fill();
            ctx.closePath();
-            if(angle_needle!="random")
+            if(angle_of_needle!="random")
                 {
                     ctx.font="normal 12px arial";
 
                     ctx.fillStyle = "black";
-                    ctx.fillText(angle_needle,(100)*(degree_to_rads(angle_needle)),218);
+                    ctx.fillText(angle_needle,(100)*(degree_to_rads(angle_of_needless)),218);
                 }
 
 

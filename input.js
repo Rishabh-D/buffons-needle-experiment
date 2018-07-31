@@ -27,6 +27,8 @@ function allowDrop(ev) {
 
 function drag(ev) {
  ev.dataTransfer.setData("text", "drag1");
+  
+    //document.getElementById("myneedle2").style.cursor = "move";
 }
 
 

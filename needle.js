@@ -6,11 +6,11 @@ var previous_needle_array_len2=0;
 var count=0;
 // function constructor for needles
 function Needle() {
-    this.length = length_of_needles;
-    if(angle_needle=="random")
+    this.length = length_of_needle;
+    if(angle_of_needle=="random")
     this.angle = getRandomArbitrary(0, 180);
     else
-        this.angle=angle_needle;
+        this.angle=angle_of_needle;
     //console.log(this.angle);
     this.cx = getRandomArbitrary(0.5*this.length, 300-0.5*this.length);
     this.cy = getRandomArbitrary(0.5*this.length, 300-0.5*this.length);
@@ -29,7 +29,7 @@ function Needle() {
 
 //creating needles
 function create_needles() {
-    for(var i = 0; i < number_of_needles; i++){
+    for(var i = 0; i < number_of_needle; i++){
         var temp = new Needle();
        
         needle_array.push(temp);

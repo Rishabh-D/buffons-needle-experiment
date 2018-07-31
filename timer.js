@@ -3,9 +3,9 @@
 var timer; 
 
 function cbf(){
-    var x= document.getElementById("y");
-    var y=document.getElementById('needle_length_user');
-    var z=document.getElementById("needle_angle_user");
+    var x= document.getElementById("needle_numbers");
+    var y=document.getElementById('input_length');
+    var z=document.getElementById("input_angle");
     w=Number.isInteger(+x.value)
     //e=if(+x.value>0){};
     if(w){
@@ -27,8 +27,3 @@ function Animate(){
     
     
 }
-
-//timer.stop();
-
-//timer.restart(callback, 200);  will start timer function
-//timer.stop();                  will stop timer function
